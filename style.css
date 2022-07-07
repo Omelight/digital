@@ -29,9 +29,10 @@ nav ul li a {
 
 /*==========main section=================*/
 main {
-	display: flex;
+	display: grid;
+	grid-template-columns: 1fr 2fr;
 	border-top: 1px solid #dadada;
-	height: calc(100vh - 180px);
+
 	align-items: center;
 	justify-content: center;
 }
@@ -82,7 +83,7 @@ main p {
 	text-decoration: none;
 }
 footer {
-	height: 80px;
+	grid-column: span 2;
 	background: #c4c4f7;
 	color: #121111;
 	font-size: 1.2em;
@@ -108,6 +109,7 @@ footer {
 	}
 
 	main {
-		flex-direction: column;
+		display: grid;
+		grid-template-columns: 1fr;
 	}
 }
